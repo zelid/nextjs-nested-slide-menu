@@ -53,7 +53,8 @@ class Layout extends Component<Props, State> {
 
     if (this.state.currentLevel > 0)
       this.setState({
-        currentLevel: this.state.currentLevel - 1
+        currentLevel: this.state.currentLevel - 1,
+        currentItem: this.state.previousItem
       });
 
     console.log("currentLevel after:");
