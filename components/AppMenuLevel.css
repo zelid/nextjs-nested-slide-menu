@@ -1,0 +1,21 @@
+.menu-level {
+  left: 100%;
+  visibility: hidden;
+  width: 100%;
+}
+
+/* For current visible menu level. */
+.menu-level.active-level {
+  visibility: visible;
+}
+
+.active-item > .menu-level {
+  visibility: visible;
+}
+
+.menu-back-button {
+  cursor: pointer;
+  background: config('colors.menu-background-blue');
+  min-height: 90px;
+  padding: 0.53rem;
+}

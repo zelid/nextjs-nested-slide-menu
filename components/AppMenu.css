@@ -1,0 +1,31 @@
+#menu {
+  transition: all 0.5s;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+#menu > ul.menu-level {
+  visibility: visible;
+  left: 0;
+}
+
+#menu li > a > svg > * {
+  stroke: config('colors.dark-blue');
+}
+
+#menu li:hover > a > svg > *,
+#menu li.current > a > svg > * {
+  stroke: config('colors.menu-blue');
+}
+#menu li:hover > a,
+#menu li.current > a {
+  color: config('colors.menu-blue');
+}
+
+#menu svg,
+.back-button svg {
+  display: block;
+  margin: 0 auto 12px;
+}
+

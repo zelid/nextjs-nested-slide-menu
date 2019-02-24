@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "lib": ["dom", "es2017"],
+    "moduleResolution": "node",
+    "allowJs": true,
+    "noEmit": true,
+    /* 
+       Enables emit interoperability between CommonJS and ES Modules 
+       via creation of namespace objects for all imports. 
+       Implies 'allowSyntheticDefaultImports'. 
+    */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@fv/*": ["./*"],
+    }
+  }
+}

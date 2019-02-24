@@ -1,0 +1,46 @@
+{
+  "name": "nextjs-nested-slide-menu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "@zeit/next-typescript": "^1.1.1",
+    "babel-plugin-macros": "^2.5.0",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.11",
+    "next":"^8.0.3",
+    "next-fonts":"^0.17.0",
+    "node-sass": "^4.11.0",
+    "postcss-css-variables": "^0.11.0",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "postcss-scss": "^2.0.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.1",
+    "react-router-dom": "^4.3.1",
+    "react-transition-group": "^2.5.3"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.121",
+    "@types/next": "^7.0.9",
+    "@types/react": "^16.8.2",
+    "@types/react-dom": "^16.8.0",
+    "autoprefixer": "^9.4.7",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-plugin-styled-components": "^1.10.0",
+    "babel-plugin-tailwind": "^0.1.10",
+    "cssnano": "^4.1.8",
+    "next-purgecss": "^3.0.0",
+    "postcss-easy-import": "^3.0.0",
+    "tailwindcss": "^0.7.4",
+    "typescript": "^3.3.3"
+  }
+}
