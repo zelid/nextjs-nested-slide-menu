@@ -102,7 +102,7 @@ class AppMenu extends Component<Props, State> {
     items.map((item, i) => {
       const { url, label, children } = item;
       const classnames = classNames("block", {
-        "current active-item": item.active
+        "current active-item": item.url === this.props.currentItem.url // item.active
       });
       return (
         <li className={classnames} key={uniqueId(`item-${i}-`)}>
@@ -128,7 +128,7 @@ class AppMenu extends Component<Props, State> {
     const { items } = this.props;
     console.log("AppMenu render");
     const style = {
-      left: `${-100 * this.props.currentLevel}%`
+      left: `${-100 * (this.props.currentLevel - 0)}%`
     };
     return (
       <div className="sidebar-wrapper">
