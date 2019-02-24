@@ -43,7 +43,7 @@ const getInitialState = (props: Props): State => {
   };
 };
 
-class App extends Component<Props, State> {
+class Layout extends Component<Props, State> {
   state = getInitialState(this.props);
 
   onBackButtonClick = (event: Event) => {
@@ -60,32 +60,29 @@ class App extends Component<Props, State> {
     console.log(this.state.currentLevel);
 
     // Router.back()
-    if (this.state.previousItem) Router.push(this.state.previousItem.url);
+    // if (this.state.previousItem) Router.push(this.state.previousItem.url);
     event.preventDefault();
   };
 
-  onMenuItemClick = (event: Event, item: MenuItem) => {
-    console.log("onMenuItemClick");
-    console.log("currentLevel before:");
-    console.log(this.state.currentLevel);
+onMenuItemClick = (event: Event, item: MenuItem) => {
+  console.log("onMenuItemClick");
+  console.log("currentLevel before:");
+  console.log(this.state.currentLevel);
 
-    if (item.children) {
-      this.setState({
-        currentLevel: item.level + 1,
-        previousItem: this.state.currentItem,
-        currentItem: item
-      });
-    }
-    // this.setState({
-    //   currentItem: item
-    // })
+  if (item.children) {
+    this.setState({
+      currentLevel: item.level + 1,
+      previousItem: this.state.currentItem,
+      currentItem: item
+    });
+  }
 
-    console.log("currentLevel after:");
-    console.log(this.state.currentLevel);
-    
-    if (item.url) Router.push(item.url);
-    event.preventDefault();
-  };
+  console.log("currentLevel after:");
+  console.log(this.state.currentLevel);
+
+  // if (item.url) Router.push(item.url);
+  event.preventDefault();
+};
 
   render() {
     return (
@@ -136,4 +133,4 @@ class App extends Component<Props, State> {
   }
 }
 
-export default App;
+export default Layout;
